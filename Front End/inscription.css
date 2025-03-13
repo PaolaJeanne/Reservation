@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav h1 {
+    color: white;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 20px;
+    color: white;
+    font-size: 1em;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #130909;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 15px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.input-icon {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.input-wrapper {
+    position: relative;
+    margin: 10px 0;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5e17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e04e00;
+}
+
+/* Media Queries pour la responsive */
+
+/* Tablettes */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav h1 {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    nav a {
+        margin: 5px 10px;
+        padding: 10px;
+    }
+    
+    .search-container {
+        width: 100%;
+        justify-content: center;
+        margin: 15px 0;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px 5px;
+    }
+    
+    nav h1 {
+        font-size: 1.5em;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    nav a {
+        margin: 5px 0;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .search-container button {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .container {
+        margin-top: 30px;
+    }
+    
+    .form-container {
+        padding: 15px;
+        max-width: 280px;
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+}

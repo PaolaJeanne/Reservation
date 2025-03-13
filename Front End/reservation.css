@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    margin: -20px -20px 20px -20px; /* Pour compenser le padding du body */
+}
+
+nav h1 {
+    color: white;
+    margin: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 20px;
+    color: white;
+    font-size: 1em;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #130909;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.reservation-form input, 
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries pour la responsive */
+
+/* Tablettes */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    a {
+        margin: 5px 10px;
+        padding: 10px;
+    }
+    
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        margin: 15px auto;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .submit-button {
+        max-width: 100%;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav {
+        margin: -10px -10px 15px -10px;
+        padding: 8px;
+    }
+    
+    nav h1 {
+        font-size: 1.3rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    a {
+        margin: 3px 0;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .search-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .search-container button {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .reservation-form {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    .reservation-form input,
+    .reservation-form select,
+    .submit-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
