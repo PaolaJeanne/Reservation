@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link rel="stylesheet" href="paiement.css">
+</head>
+<body>
+    <nav>
+        <h1> LOGO</h1>
+          <a href="acceuil.html">Acceuil</a>
+          <a href="Service.html">Services</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="paiement.html">Paiement</a>
+          <a href="connexion.html">login</a>
+    
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">valider</button>
+          </div>
+        </nav>
+
+    <div class="payment-container">
+        <h2>Résumé de la Commande</h2>
+        <div class="order-summary">
+            <p><strong>Type de Transport:</strong> Taxi</p>
+            <p><strong>Date:</strong> 25 Février 2025</p>
+            <p><strong>Heure:</strong> 14:00</p>
+            <p><strong>Destination:</strong> Aéroport International</p>
+            <p><strong>Prix Total:</strong> 20 €</p>
+        </div>
+    
+        <h2>Détails de Paiement</h2>
+        
+        <form>
+            <label for="payment-method">Choisissez votre méthode de paiement:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Carte de Crédit/Débit</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Virement Bancaire</option>
+                <option value="cash-on-delivery">Paiement à la Livraison</option>
+                <option value="orange-money">Orange Money</option>
+                <option value="mtn-money">MTN Money</option>
+            </select>
+    
+            <div id="credit-card-info" class="payment-info">
+                <label for="name">Nom Complet:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="card-number">Numéro de Carte:</label>
+                <input type="text" id="card-number" name="card-number" required>
+    
+                <label for="expiry">Date d'Expiration:</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/AA" required>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+    
+            <div id="paypal-info" class="payment-info" style="display: none;">
+                <p>Vous serez redirigé vers PayPal pour finaliser votre paiement.</p>
+            </div>
+    
+            <div id="bank-transfer-info" class="payment-info" style="display: none;">
+                <p>Veuillez transférer le montant à notre compte bancaire. Détails fournis après la confirmation.</p>
+            </div>
+    
+            <div id="cash-on-delivery-info" class="payment-info" style="display: none;">
+                <p>Paiement à la livraison. Assurez-vous d'avoir le montant exact.</p>
+            </div>
+    
+            <div id="orange-money-info" class="payment-info" style="display: none;">
+                <p>Veuillez entrer votre numéro Orange Money pour le paiement.</p>
+                <label for="orange-number">Numéro Orange Money:</label>
+                <input type="text" id="orange-number" name="orange-number" required>
+            </div>
+    
+            <div id="mtn-money-info" class="payment-info" style="display: none;">
+                <p>Veuillez entrer votre numéro MTN Money pour le paiement.</p>
+                <label for="mtn-number">Numéro MTN Money:</label>
+                <input type="text" id="mtn-number" name="mtn-number" required>
+            </div>
+    
+            <button type="submit" class="button">Confirmer le Paiement</button>
+        </form>
+    
+        <p><a href="politique-confidentialite.html">Politique de Confidentialité</a></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333;
+}
+
+nav h1{
+    color: white;
+}
+
+a{
+text-decoration: none;
+padding: 20px;
+margin-left: 75px;
+color: white;
+font-size: 1em;
+
+}
+
+
+.search-container{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+        
+}
+
+input{
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+input:focus{
+    border-color: #0056b3;
+    outline: none;
+}
+.search-container button{
+padding: 10px 20px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+transition: border-color 0.3s;
+}
+
+.search-container button:hover{
+   background-color: #130909;
+}
+
+
+.destination-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.destination-container h2 {
+    margin-bottom: 20px;
+}
+
+.destination-card {
+    display: inline-block; /* Pour un alignement horizontal */
+    width: 200px; /* Ajuste selon tes besoins */
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 120px; /* Hauteur fixe pour uniformiser les images */
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    margin: 10px 0;
+}
+
+.destination-card p {
+    padding: 0 10px 10px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les cartes */
+    gap: 25px; /* Espacement entre les cartes */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Évite que l'image dépasse les coins arrondis */
+    transition: transform 0.2s;
+    text-align: center; /* Centre le texte */
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120%; /* L'image remplit toute la largeur de la carte */
+    height: 100px; /* Conserve le ratio de l'image */
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 0 10px 10px;
+}
+
+.button {
+    display: block;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px; /* Coins arrondis en bas */
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
